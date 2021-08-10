@@ -1,0 +1,463 @@
+/*Fuentes*/
+@font-face{
+	font-family: "Oswald";
+	src: url('fonts/Oswald.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Generales*/
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/*Banner*/
+#banner{
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #424242;
+	justify-content: center;
+	align-items: center;
+}
+
+#banner img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.40;
+}
+
+#banner .content{
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+
+#banner .content h2{
+	color: #fff;
+	font-size: 60px;
+	font-family: "Oswald";
+}
+
+#banner .content p{
+	color: #fff;
+	font-size: 18px;
+	font-family: "Oswald";
+}
+
+#header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+#header .logo{
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: "Oswald";
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+#header .toggle{
+	position: relative;
+	width: 36px;
+	height: 28px;
+	background: url(img/toggle.png);
+	background-size: cover;
+	cursor: pointer; 
+}
+
+.about{
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+
+.about .contentB{
+	background: #162c3b;
+	padding: 100px;
+	width: 50%;
+}
+
+.titulo{
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 10px; 
+	font-family: "Oswald";
+}
+
+.text{
+	color: #fff;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.about .imgB{
+	background: url(img/dog.jpg);
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+}
+
+.servicios{
+	background: #12222d;
+	padding: 100px;
+	text-align: center;
+}
+
+.servicios .containerX{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+
+.servicios .containerX .serviceBx{
+	position: relative;
+	background: #fff;
+	width: 250px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.servicios .containerX .serviceBx img{
+	max-width: 100px;
+}
+
+.servicios .containerX .serviceBx h2{
+	font-weight: 500;
+	margin-top: 20px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: "Oswald";
+}
+
+.comunidad{
+	background: #3f8ffc;
+	width: 100%;
+	padding: 100px;
+	padding-top: 300px;
+	margin-top: -300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.comunidad .contentB{
+	max-width: 600px;
+}
+
+.comunidad .imgB{
+	max-width: 350px;
+}
+
+.comunidad .imgB img{
+	width: 100%;
+}
+/*Cliente*/
+.cliente{
+	background: #162c3b;
+	padding: 100px;
+	text-align: center;
+}
+
+.cliente .imgB{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.cliente .imgB img{
+	max-width: 200px;
+	margin: 20px;
+	opacity: 0.25;
+	cursor: pointer;
+}
+
+.cliente .imgB img:hover{
+	opacity: 1;
+}
+
+.testimonio{
+	position: relative;
+	background: #12222d;
+	text-align: center;	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*Testimonios*/
+.testimonio h2{
+	margin-top: 15px;
+}
+
+.testimonio .containerX{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 40px;
+	flex-wrap: wrap; 
+}
+
+.testimonio .containerX .contentB{
+	background: #fff;
+	padding: 60px 50px;
+	width: 350px;
+	min-height: 810px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.testimonio .containerX .contentB p{
+	font-style: italic;
+}
+
+.testimonio .containerX .contentB h3{
+	width: 100%;
+	text-align: end;
+	font-weight: 500;
+	font-family: "Oswald";
+	color: #3f8ffc;
+}
+
+.testimonio .containerX .contentB img{
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+/*Contacto*/
+.contacto{
+	padding: 100px;
+	background: #162c3b;
+	text-align: center;
+}
+
+.about .imgC{
+	background: url(img/m2.jpg);
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+}
+
+.redbg{
+	background: url(img/red.jpg) !important;
+	background-size: cover;
+	background-position: center;
+}
+
+.form .inputBx{
+	margin-bottom: 40px;
+}
+
+.form .inputBx input{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+
+.form .inputBx input::placeholder{
+	color: #fff;
+}
+
+.form .inputBx textarea{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	min-height: 150px;
+	border-bottom: 2px solid #fff;
+}
+
+.form .inputBx textarea::placeholder{
+	color: #fff;
+}
+
+.form .inputBx input[type=submit]{
+	width: 150px;
+	background: #fff;
+	color: #111;
+	cursor: pointer;
+	font-weight: 400;
+}
+/*Footer*/
+.footer{
+	background: #162c3b;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer ul li{
+	list-style: none;
+}
+
+.footer ul li a{
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.footer ul li a img{
+	filter: invert(1);
+	max-width: 40px;
+}
+
+
+@media (max-width: 991px){
+	
+	.banner header{
+		padding: 20px 50px;
+	}
+
+	.banner .content h2{
+		font-size: 36px;
+	}
+	
+	.banner .content p{
+		font-size: 16px;
+	}
+
+	.about{
+		flex-direction: column;
+	}
+
+	.about .contentB,
+	.about .imgB{
+		width: 100%;
+		padding: 50px;
+		min-height: 400px;
+		text-align: center;
+	}
+
+	.servicios{
+		padding: 50px;
+	}
+
+	.servicios .containerX{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.servicios .containerX .serviceBx{
+		margin: 20px;
+		width: 300px;
+		height: 350px;
+	}
+
+	.comunidad{
+		padding: 50px;
+		padding-top: 300px;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.comunidad .imgB{
+		margin-top: 40px;
+	}
+
+	.cliente{
+		padding: 50px;
+	}
+
+	.cliente .contentB{
+		padding: 60px 40px;
+		max-width: 550px;
+		margin-bottom: 40px;
+	}
+
+	.cliente .contentB:last-child{
+		margin-bottom: 0px;
+	}
+
+	.contact{
+		padding: 50px;
+	}
+
+	.footer{
+		padding:20px 50px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+}
+
+
+@media (max-width: 582px){
+	.contacto, 
+	.cliente{
+	    padding: 40px;
+	    text-align: justify;
+    }
+    .servicios p, 
+    .about p{
+    	text-align: justify;
+    }
+    .cliente .imgB {
+  	  margin-top: 10px;
+  	  text-align: center !important;
+	}
+
+	.cliente .imgB img {
+   		max-width: 239px;
+   	}
+
+   	#samuel{
+   		min-height: 530px;
+   	}
+   	.imgB img{
+   		width: 35%;
+   	}
+}
+
+
+
+
+
+
